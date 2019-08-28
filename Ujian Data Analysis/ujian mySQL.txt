@@ -88,6 +88,7 @@ order by negara_ASEAN;
 select country.Name as negaraG20,country.Population as populasi_negara,GNP as GNP,city.Name as ibukota,city.Population as populasi_ibukota from country 
 
 inner join city
+
 on Code=CountryCode 
 
 where country.Name in('Argentina','Australia','Brazil','Canada','China','France','Germany','India','Indonesia','Japan','Mexico','Russian Federation','Saudi Arabia','South Africa','South Korea','Turkey','United Kingdom','United States') 
